@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    font-family: sans-serif;
+    color: #292929;
+    background-color: white;
+}
+.ad{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    font-size: 0.8em;
+    padding: 20px;
+}
+.ad p{
+    max-width: 425px; /* Remember you inputted a max-width here */
+}
+p a{
+    color: aliceblue;
+}
+#wrapper-container{
+    background-color: #F0EEEA;
+    padding: 13px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 5px;
+    max-width: 100%; /* Remember you inputted a max-width here */
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#hero-image-container{
+    position: relative;
+    margin-bottom: 20px;
+    /* width: 290px;
+    height: 290px; */ /* Always remember you did something here */
+}
+.hero-image{
+    width: 100%;
+    height: 100%;
+}
+.hero-image-box{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    background-color: white;
+    border-radius: 5px;
+    box-sizing: content-box;
+    width: 40%;
+    height: 25%;
+    padding: 20px 15px;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 500px;
+}
+.hero-image-box .month-earning{
+    border-bottom: 1px solid #E4E3E1;
+    padding-bottom: 10px;
+}
+.hero-image-box .price{
+    padding: 10px 0 10px 7px;
+    font-weight: bold;
+}
+.hero-image-box button{
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 35px;
+}
+.wrapper-content h1{
+    font-size: 1.7em;
+}
+.wrapper-content p{
+    color: #5A5444;
+    line-height: 1.4em;
+    margin: 10px 0;
+}
+.wrapper-content p span{
+    font-style: italic;
+}
+.wrapper-content ul{
+    list-style-type: none;
+    color: #5A5444;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+.wrapper-content ul li{
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+.wrapper-content ul li::before{
+    content: url(/Assets/Checkmark.svg);
+    margin-right: 5px;
+}
+input{
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin: 5px 3px;
+    padding: 0 10px;
+    border-radius: 5px;
+
+}
+input::placeholder{
+    text-align: center;
+    font-style: italic;
+    color: #5A5444;
+}
+#submit-btn{
+    color: white;
+    background-color: black;
+}
+#social-media{
+    margin: 10px 20px;
+}
+#social-media ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;   
+}
+#social-media ul li img{
+    margin: 20px 5px;
+    width: 85px
+}
+#wrapper-two{
+    background-color: #F0EEEA;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#wrapper-two h1{
+    font-size: 1.7em;
+    padding: 20px 40px 15px 10px;
+}
+#wrapper-two p{
+    padding: 10px;
+    color: #5A5444;
+    line-height: 1.4em;
+}
+#wrapper-two a{
+    padding-left: 10px;
+    color: #5A5444;
+    font-weight: bold;
+}
+#wrapper-two a::after{
+    font-family: 'Font Awesome 5 free';
+    content: '\f30b';
+    margin-left: 5px;
+}
+#wrapper-two a:hover::after{
+    padding-left: 5px;
+    transition: padding-left 0.15s ease-in-out;
+    -webkit-transition: padding-left 0.15s ease-in-out;
+    -moz-transition: padding-left 0.15s ease-in-out;
+    -o-transition: padding-left 0.15s ease-in-out;
+    -ms-transition: padding-left 0.15s ease-in-out;
+}
+.escrow-image{
+    width: 200px;
+    height: 210px;
+    overflow: hidden;
+    padding-top: 25px;
+}
+.escrow-image img{
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    right: -10px;
+    bottom: 1px;
+    overflow: hidden;
+}
+
+/* #wrapper-three{
+    background-color: #F0EEEA;
+} */
