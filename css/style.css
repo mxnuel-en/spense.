@@ -8,26 +8,23 @@ body{
     color: #292929;
     background-color: white;
 }
-.ad{
-    background-color: rgb(37, 37, 37);
+#ad{
+    background-color: black;
     color: white;
     font-size: 0.8em;
     padding: 20px;
 }
-.ad p{
-    max-width: 425px; /* Remember you inputted a max-width here */
-}
-p a{
+#ad a{
     color: aliceblue;
 }
 #wrapper-container{
     background-color: #F0EEEA;
-    padding: 13px;
+    padding: 20px;
 }
 header{
     display: flex;
     justify-content: space-between;
-    padding: 25px 5px;
+    padding: 15px 5px;
     max-width: 100%; /* Remember you inputted a max-width here */
 }
 .logo{
@@ -65,7 +62,7 @@ header{
     padding-bottom: 10px;
 }
 .hero-image-box .price{
-    padding: 10px 0 10px 7px;
+    padding: 10px 0 10px 5px;
     font-weight: bold;
 }
 .hero-image-box button{
@@ -182,6 +179,72 @@ input::placeholder{
     overflow: hidden;
 }
 
-/* #wrapper-three{
-    background-color: #F0EEEA;
-} */
+#wrapper-three{
+    padding: 20px;
+}
+#wrapper-three h1{
+    font-size: 1.7em;
+}
+#wrapper-three p{
+    color: #5A5444;
+    font-size: .8em;
+    line-height: 1.4em;
+    margin: 10px 0;
+}
+#wrapper-three a{
+    color: #5A5444;
+    font-size: .85em;
+    font-weight: bold;
+}
+#wrapper-three a::after{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f30b';
+    margin-left: 5px;
+}
+#wrapper-there a:hover::after{
+    padding-left: 5px;
+    transition: padding-left 0.15s ease-in-out;
+    -webkit-transition: padding-left 0.15s ease-in-out;
+    -moz-transition: padding-left 0.15s ease-in-out;
+    -o-transition: padding-left 0.15s ease-in-out;
+    -ms-transition: padding-left 0.15s ease-in-out;
+}
+#wrapper-three img{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+footer{
+    background-color: black;
+    color: #959695;
+    padding: 50px 20px;
+}
+footer h4{
+    color: white;
+    padding-bottom: 5px;
+}
+footer p{
+    font-size: .85em;
+    margin-bottom: 20px;
+}
+footer ul{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+footer ul li{
+    margin: 5px 0;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #959695;
+}
+footer ul li a:hover{
+    font-size: 1.2em;
+    transition: font-size 0.2s ease-in-out;
+}
+footer .link-lists{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+}
+
