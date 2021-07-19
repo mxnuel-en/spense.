@@ -242,7 +242,7 @@ footer ul li a:hover{
     font-size: 1.2em;
     transition: font-size 0.2s ease-in-out;
 }
-footer .link-lists{
+footer .footer-links{
     display: grid;
     grid-template-columns: repeat(2, auto);
     justify-content: space-between;
