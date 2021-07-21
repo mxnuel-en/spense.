@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 body{
     font-family: sans-serif;
@@ -11,33 +11,38 @@ body{
 #ad{
     background-color: black;
     color: white;
-    font-size: 0.8em;
+    font-size: 0.75em;
     padding: 20px;
+    line-height: 1.5em;
 }
 #ad a{
     color: aliceblue;
 }
-#wrapper-container{
+#wrapper-one{
     background-color: #F0EEEA;
-    padding: 20px;
+    padding: 0 15px;
 }
-header{
-    display: flex;
+nav{
     justify-content: space-between;
-    padding: 15px 5px;
-    max-width: 100%; /* Remember you inputted a max-width here */
+    padding: 20px 0;
+    /* max-width: 100%; Remember you inputted a max-width here */
+}
+.big-devices{
+    display: none;
+}
+.small-devices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .logo{
     font-weight: bold;
-    font-size: 20px;
     text-decoration: none;
     color: black;
 }
 #hero-image-container{
     position: relative;
     margin-bottom: 20px;
-    /* width: 290px;
-    height: 290px; */ /* Always remember you did something here */
 }
 .hero-image{
     width: 100%;
@@ -45,24 +50,24 @@ header{
 }
 .hero-image-box{
     position: absolute;
-    top: 7%;
-    left: 7%;
+    top: 20px;
+    left: 20px;
     background-color: white;
     border-radius: 5px;
     box-sizing: content-box;
-    width: 40%;
-    height: 25%;
-    padding: 20px 15px;
+    width: 90px;
+    height: 80px;
+    padding: 15px;
     font-weight: bold;
-    font-size: 13px;
-    margin-bottom: 500px;
+    font-size: .7em;
 }
 .hero-image-box .month-earning{
     border-bottom: 1px solid #E4E3E1;
-    padding-bottom: 10px;
+    font-weight: lighter;
+    padding-bottom: 5px;
 }
 .hero-image-box .price{
-    padding: 10px 0 10px 5px;
+    padding: 10px 5px;
     font-weight: bold;
 }
 .hero-image-box button{
@@ -72,13 +77,14 @@ header{
     border-radius: 5px;
     border: none;
     width: 100%;
-    height: 35px;
+    height: 30px;
 }
 .wrapper-content h1{
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 .wrapper-content p{
     color: #5A5444;
+    font-size: .7em;
     line-height: 1.4em;
     margin: 10px 0;
 }
@@ -89,67 +95,73 @@ header{
     list-style-type: none;
     color: #5A5444;
     font-weight: bold;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
 }
 .wrapper-content ul li{
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-left: 5px;
     margin-bottom: 2px;
 }
-.wrapper-content ul li::before{
-    content: url(/Assets/Checkmark.svg);
-    margin-right: 5px;
+.wrapper-content ul li{
+    list-style-image: url(/Assets/Checkmark.svg);
+    margin-left: 20px;
 }
 input{
-    width: 120px;
-    height: 40px;
     border: none;
-    margin: 5px 3px;
+    margin: 5px 2px;
     padding: 0 10px;
     border-radius: 5px;
-
+    margin-bottom: 15px;
+    height: 40px;
 }
-input::placeholder{
+#email{
+    width: 50%;
+    border: 1px solid #ACA9A1;
+}
+#email::placeholder{
     text-align: center;
     font-style: italic;
     color: #5A5444;
+    opacity: 0.5;
 }
 #submit-btn{
+    display: inline;
     color: white;
     background-color: black;
-}
-#social-media{
-    margin: 10px 20px;
+    padding: 0 7%;
 }
 #social-media ul{
+    margin: 10px 20px;
     list-style-type: none;
     display: flex;
-    padding: 0;   
+    padding: 0; 
 }
 #social-media ul li img{
     margin: 20px 5px;
-    width: 85px
+    width: 70px;
 }
 #wrapper-two{
     background-color: #F0EEEA;
     padding: 20px;
     margin: 0 20px 20px 20px;
     border-radius: 10px;
-    position: relative;
+    
 }
 #wrapper-two h1{
-    font-size: 1.7em;
-    padding: 20px 40px 15px 10px;
+    font-size: 1.5em;
+    padding: 10px;
 }
 #wrapper-two p{
     padding: 10px;
     color: #5A5444;
     line-height: 1.4em;
+    font-size: .8em;
 }
 #wrapper-two a{
     padding-left: 10px;
     color: #5A5444;
     font-weight: bold;
+    font-size: .85em;
 }
 #wrapper-two a::after{
     font-family: 'Font Awesome 5 free';
@@ -166,19 +178,18 @@ input::placeholder{
 }
 .escrow-image{
     width: 200px;
-    height: 210px;
+    height: 200px;
+    border: 1px solid black;
     overflow: hidden;
     padding-top: 25px;
+    position: relative;
 }
 .escrow-image img{
     position: absolute;
-    width: 600px;
-    height: 250px;
-    right: -10px;
-    bottom: 1px;
-    overflow: hidden;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
 }
-
 #wrapper-three{
     padding: 20px;
 }
@@ -198,12 +209,12 @@ input::placeholder{
 }
 #wrapper-three a::after{
     font-family: 'Font Awesome 5 Free';
-    content: '\f30b';
+    content: '\f061';
     margin-left: 5px;
 }
 #wrapper-there a:hover::after{
-    padding-left: 5px;
-    transition: padding-left 0.15s ease-in-out;
+    padding-left: 10px;
+    transition: padding-left 0.15s ease-in;
     -webkit-transition: padding-left 0.15s ease-in-out;
     -moz-transition: padding-left 0.15s ease-in-out;
     -o-transition: padding-left 0.15s ease-in-out;
@@ -217,7 +228,7 @@ input::placeholder{
 footer{
     background-color: black;
     color: #959695;
-    padding: 50px 20px;
+    padding: 40px 20px 20px 20px;
 }
 footer h4{
     color: white;
@@ -248,3 +259,208 @@ footer .footer-links{
     justify-content: space-between;
 }
 
+@media (min-width: 320px) {
+    #ad{
+        font-size: 0.9em;
+    }
+    nav{
+        padding: 25px 0;
+    }
+    .hero-image-box{
+        top: 25px;
+        left: 25px;
+        width: 110px;
+        height: 100px;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+    .hero-image-box .price{
+        padding: 10px 5px;
+        font-weight: bold;
+    }
+    .hero-image-box button{
+        height: 35px;
+    }
+    .wrapper-content p{
+        font-size: .85em;
+        margin: 10px 0;
+    }
+    .wrapper-content ul {
+        padding-left: 5px;
+        font-size: 1.2em;
+    }
+    #social-media ul li img{
+        width: 85px;
+    }
+    .escrow-image img{
+        width: 600px;
+        height: 200px;
+        right: -10px;
+        bottom: 1px;
+        overflow: hidden;
+    }
+}
+@media (min-width: 360px) {
+    #ad{
+        font-size: 1em;
+    }
+    nav{
+        font-size: 1.1em;
+        padding: 30px 0;
+    }
+    .hero-image-box{
+        top: 30px;
+        left: 30px;
+        width: 120px;
+        height: 120px;
+        padding: 15px;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    .hero-image-box .price{
+        padding: 15px 5px;
+        font-weight: bold;
+    }
+    .hero-image-box button{
+        height: 40px;
+    }
+    .wrapper-content h1{
+        font-size: 2em;
+    }
+    .wrapper-content p{
+        font-size: 0.9em;
+        margin: 10px 0;
+    }
+    .wrapper-content ul{
+        font-size: 1.1em;
+        margin-left: 5px;
+    }
+    #social-media ul li img{
+        width: 100px;
+    }
+    #wrapper-two h1{
+        font-size: 2em;
+        padding: 5px 10px;
+    }
+    #wrapper-two p{
+        padding: 10px;
+        color: #5A5444;
+        line-height: 1.4em;
+        font-size: .9em;
+    }
+    #wrapper-two a{
+        padding-left: 10px;
+        color: #5A5444;
+        font-weight: bold;
+        font-size: .9em;
+    }
+    .escrow-image{
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    padding-top: 25px;
+    }
+    .escrow-image img{
+        width: 700px;
+        height: 300px;
+        right: -10px;
+        bottom: 0px;
+        overflow: hidden;
+    }
+    #wrapper-three h1{
+        font-size: 2em;
+    }
+    #wrapper-three p{
+        font-size: 1em;
+    }
+    #wrapper-three a{
+        font-size: 1em;
+    }
+    footer h4{
+        color: white;
+        padding-bottom: 5px;
+        font-size: 1.2em;
+    }
+    footer p{
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .footer-links{
+        padding-right: 10px;
+    }
+}
+@media (min-width: 411px){
+    #ad{
+        font-size: 1.1em;
+    }
+    .hero-image-box{
+        width: 150px;
+        height: 125px;
+    }
+    .hero-image-box .month-earning{
+        margin: 5px 5px;
+    }
+    .hero-image-box .price{
+        padding: 10px 5px;
+    }
+    .hero-image-box button{
+        height: 40px;
+        margin-top: 5px;
+    }
+    .wrapper-content h1{
+        font-size: 2em;
+    }
+    .wrapper-content p{
+        font-size: 1em;
+    }
+    .wrapper-content ul{
+        font-size: 1em;
+        padding-left: 5px;
+    }
+    #email{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    #social-media ul li img{
+        width: 115px;
+    }
+    .escrow-image{
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    padding-top: 25px;
+    }
+    .escrow-image img{
+        width: 800px;
+        height: 300px;
+        right: -7px;
+        bottom: 0px;
+        overflow: hidden;
+    }
+    #wrapper-three h1{
+        font-size: 2em;
+    }
+    #wrapper-three p{
+        font-size: 1em;
+        margin-bottom: 20px;
+    } 
+}
+/* For Tablets */
+@media (min-width: 500px){
+    #ad{
+        font-size: .8em;
+    }
+    #ad{
+        text-align: center;
+    }
+    .small-devices{
+        display: none;
+    }
+    .big-devices{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-between;
+    }
+}
