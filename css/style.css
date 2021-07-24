@@ -8,6 +8,12 @@ body{
     color: #292929;
     background-color: white;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
 #ad{
     background-color: black;
     color: white;
@@ -17,6 +23,7 @@ body{
 }
 #ad a{
     color: aliceblue;
+    text-decoration: underline;
 }
 #wrapper-one{
     background-color: #F0EEEA;
@@ -100,7 +107,6 @@ nav img{
     font-style: italic;
 }
 .wrapper-content ul{
-    list-style-type: none;
     color: #5A5444;
     font-weight: bold;
     margin: 0 0 15px 0;
@@ -111,7 +117,7 @@ nav img{
     margin-bottom: 2px;
 }
 .wrapper-content ul li{
-    list-style-image: url(/Assets/Checkmark.svg);
+    list-style-image: url(../Assets/Checkmark.svg);
     margin-left: 20px;
 }
 input{
@@ -140,7 +146,6 @@ input{
 }
 #social-media ul{
     margin: 10px 20px;
-    list-style-type: none;
     display: flex;
     flex-direction: row;
     padding: 0; 
@@ -171,6 +176,7 @@ input{
     color: #5A5444;
     font-weight: bold;
     font-size: .85em;
+    text-decoration: underline;
 }
 #wrapper-two a::after{
     font-family: 'Font Awesome 5 free';
@@ -219,8 +225,9 @@ input{
 }
 #wrapper-three a::after{
     font-family: 'Font Awesome 5 Free';
-    content: '\f061';
+    content: '\f30b';
     margin-left: 5px;
+    text-decoration: underline;
 }
 #wrapper-there a:hover::after{
     padding-left: 10px;
@@ -249,14 +256,12 @@ footer p{
     margin-bottom: 20px;
 }
 footer ul{
-    list-style-type: none;
     margin-bottom: 20px;
 }
 footer ul li{
     margin: 5px 0;
 }
 footer ul li a{
-    text-decoration: none;
     color: #959695;
 }
 footer ul li a:hover{
@@ -269,7 +274,7 @@ footer .footer-links{
     justify-content: space-between;
 }
 
- @media (min-width: 320px) {
+@media (min-width: 320px) {
     #ad{
         font-size: 0.9em;
     }
@@ -283,7 +288,7 @@ footer .footer-links{
         width: 23px;
     }
     #hero-image-container{
-        height: 325px;
+        height: 320px;
     }
     .hero-image-box{
         top: 25px;
@@ -312,13 +317,16 @@ footer .footer-links{
     #social-media ul li img{
         width: 85px;
     }
+    .escrow-image{
+        height: 250px;
+    }
 }
 @media (min-width: 360px) {
     nav{
         padding: 30px 0;
     }
     #hero-image-container{
-        height: 370px;
+        height: 360px;
     }
     .hero-image-box{
         width: 110px;
@@ -362,7 +370,7 @@ footer .footer-links{
         font-size: .9em;
     }
     .escrow-image{
-        max-width: 280px;
+        width: 280px;
         height: 300px;
     }
     #wrapper-three p{
@@ -389,7 +397,7 @@ footer .footer-links{
         padding: 0 20px;
     }
     #hero-image-container{
-        height: 420px;
+        height: 411px;
     }
     .hero-image-box{
         width: 150px;
@@ -405,6 +413,9 @@ footer .footer-links{
     .hero-image-box button{
         height: 40px;
         margin-top: 5px;
+    }
+    .wrapper-content h1{
+        font-size: 1.9em;
     }
     .wrapper-content p{
         font-size: 1em;
@@ -422,22 +433,73 @@ footer .footer-links{
         width: 115px;
     }
     .escrow-image img{
-        right: -15%;
+        right: -16%;
     }
     #wrapper-three h1{
         padding-right: 40px;
     }
     #wrapper-three p{
         margin-bottom: 20px;
-    } 
+    }
+    .footer-links{
+        padding: 0 10px;
+    }
 }
-/* For Tablets
-@media (min-width: 500px){
+/* For low resolution tablets and mobile landscapes */
+@media (min-width: 480px) and (max-width: 549px) {
+    #ad{
+        font-size: .7em;
+        text-align: center;
+    }
+    #wrapper-one{
+        padding: 0 25px;
+        /* max-width: 700px ; */
+    }
+    #hero-image-container{
+        max-height: 500px;
+    }
+    .wrapper-content h1{
+        font-size: 1.9em;
+        padding-right: 120px;
+    }
+    #social-media{
+        padding-left: 10px;
+    }
+    #social-media ul li img{
+        width: 130px;
+    }
+    #wrapper-two{
+        padding: 30px;
+        margin: 0 30px 20px 30px;        
+    }
+    .escrow-image{
+        margin-left: 30px;
+    }
+    .escrow-image img{
+        right: -18%;
+    }
+    #wrapper-three{
+        padding: 10px 30px;
+    }
+    #wrapper-three h1{
+        padding-right: 209px;
+    }
+    footer{
+        padding: 30px;
+    }
+    .footer-links {
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+
+}
+
+/*For Tablets*/
+@media (min-width: 550px){
     #ad{
         font-size: .8em;
-    }
-    #ad{
         text-align: center;
+        line-height: 20px;
     }
     .small-devices{
         display: none;
@@ -448,4 +510,116 @@ footer .footer-links{
         list-style-type: none;
         justify-content: space-between;
     }
-} */
+    #wrapper-one{
+        padding: 0 30px;
+        /* max-width: 700px ; */
+    }
+    .logo{
+        padding-top: 5px;
+    }
+    nav ul{
+        display: flex;
+        font-size: 0.7em;
+        padding-left: 110px;
+        font-weight: bold;
+    }
+    nav ul li{
+        padding: 10px 5px 0 5px;
+    }
+    nav ul li a{
+        color: black;
+    }
+    nav ul li a:hover{
+        border-bottom: 2px solid black;
+    }
+    nav button{
+        display: inline;
+        color: white;
+        background-color: black;
+        border: none;
+        padding: 0 10px;
+        border-radius: 5px;
+        height: 40px;
+    }
+    #hero-image-container{
+        height: 430px;
+    }
+    .wrapper-content h1{
+        padding-right: 180px;
+    }
+    #email{
+        margin-left: 5px;
+    }
+    #social-media{
+        margin-left: 10px;
+    }
+    #social-media ul li img{
+        width: 90px;
+        padding-right: 10px;
+    }
+    #wrapper-two{
+        padding: 50px 50px 0 50px;
+        margin: 0 30px 20px 30px;        
+    }
+    .escrow-image{
+        width: 300px;
+        margin-left: 30px;
+    }
+    .escrow-image img{
+        right: -15%;
+    }
+    #wrapper-three{
+        padding: 20px 30px;
+    }
+    #wrapper-three h1{
+        padding-right: 230px;
+    }
+    footer{
+        padding: 30px;
+    }
+    footer h4{
+        margin: 10px 0;
+    }
+    .footer-links{
+        padding: 0;
+    }
+    footer .footer-links{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 600px) {
+    nav ul li{
+        font-size: 1.1em;
+    }
+    nav ul{
+        padding-left: 160px;
+    }
+    #hero-image-container{
+        height: 475px;
+    }
+    #social-media ul li img{
+        width: 100px;
+    }
+    .escrow-image{
+        width: 320px;
+        height: 320px;
+    }
+}
+@media (min-width: 650px) {
+    #ad{
+        font-size: .9em;
+    }
+    #hero-image-container{
+        height: 515px;
+    }
+    .wrapper-content h1{
+        font-size: 2.05em;
+    }
+    #social-media ul li img{
+        width: 110px;
+    }
+    .escrow-image{
+        width: 350px;
+    }
+}
