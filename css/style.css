@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'cabin', sans-serif;
     color: #292929;
     background-color: white;
 }
 a{
     text-decoration: none;
+}
+span{
+    font-style: italic;
 }
 ul{
     list-style-type: none;
@@ -17,8 +20,8 @@ ul{
 #ad{
     background-color: black;
     color: white;
-    font-size: 0.75em;
     padding: 20px;
+    text-align: center;
     line-height: 1.5em;
 }
 #ad a{
@@ -27,20 +30,18 @@ ul{
 }
 #wrapper-one{
     background-color: #F0EEEA;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 nav{
+    display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    /* max-width: 100%; Remember you inputted a max-width here */
+    padding: 30px 0;
 }
-.big-devices{
+.tablet-devices{
     display: none;
 }
-.small-devices{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.laptop-devices{
+    display: none;
 }
 .logo{
     font-weight: bold;
@@ -53,37 +54,36 @@ nav img{
 #hero-image-container{
     position: relative;
     width: 100%;
-    height: 280px;
-    margin-bottom: 20px;
+    height: 300px;
+    margin-bottom: 30px;
     overflow: hidden;
     /* border: 1px solid black; */
-    border-radius: 5px;
+    border-radius: 10px;
 }
-.hero-image{
-    position: abosolute;
+#hero-image-container img{
     width: 100%;
+    height: 110%;
 }
 .hero-image-box{
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 30px;
+    left: 30px;
     background-color: white;
     border-radius: 5px;
     box-sizing: content-box;
-    width: 90px;
-    height: 80px;
+    width: 120px;
+    height: 100px;
     padding: 15px;
     font-weight: bold;
-    font-size: .7em;
 }
 .hero-image-box .month-earning{
     border-bottom: 1px solid #E4E3E1;
-    font-weight: lighter;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: .8em;
 }
 .hero-image-box .price{
-    padding: 10px 5px;
-    font-weight: bold;
+    font-size: .8em;
+    padding: 12px 5px;
 }
 .hero-image-box button{
     font-weight: bold;
@@ -92,19 +92,17 @@ nav img{
     border-radius: 5px;
     border: none;
     width: 100%;
-    height: 30px;
+    height: 35px;
+    cursor: pointer;
 }
 .wrapper-content h1{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 .wrapper-content p{
     color: #5A5444;
-    font-size: .7em;
+    font-size: .95em;
     line-height: 1.4em;
     margin: 10px 0;
-}
-.wrapper-content p span{
-    font-style: italic;
 }
 .wrapper-content ul{
     color: #5A5444;
@@ -112,9 +110,8 @@ nav img{
     margin: 0 0 15px 0;
 }
 .wrapper-content ul li{
-    font-size: 0.7em;
     margin-left: 5px;
-    margin-bottom: 2px;
+    margin-bottom: 10px;
 }
 .wrapper-content ul li{
     list-style-image: url(../Assets/Checkmark.svg);
@@ -143,36 +140,36 @@ input{
     color: white;
     background-color: black;
     padding: 0 7%;
+    cursor: pointer;
 }
 #social-media ul{
-    margin: 10px 20px;
+    margin: 30px 20px;
     display: flex;
-    flex-direction: row;
-    padding: 0; 
+    justify-content: space-between;
+
 }
 #social-media ul li img{
-    margin: 20px 5px;
-    width: 70px;
+    width: 100px;
+    cursor: pointer;
 }
 #wrapper-two{
     background-color: #F0EEEA;
-    padding: 20px;
+    padding: 30px 30px 0;
     margin: 0 20px 20px 20px;
     border-radius: 10px;
     
 }
 #wrapper-two h1{
-    font-size: 1.5em;
-    padding: 10px;
+    font-size: 1.8em;
+    padding-right: 50px;
+    margin-bottom: 10px;
 }
 #wrapper-two p{
-    padding: 10px;
     color: #5A5444;
     line-height: 1.4em;
-    font-size: .8em;
+    margin-bottom: 20px;
 }
 #wrapper-two a{
-    padding-left: 10px;
     color: #5A5444;
     font-weight: bold;
     font-size: .85em;
@@ -193,7 +190,7 @@ input{
 }
 .escrow-image{
     width: 100%;
-    height: 200px;
+    height: 250px;
     /* border: 1px solid black; */
     overflow: hidden;
     margin-top: 5px;
@@ -203,31 +200,29 @@ input{
     position: absolute;
     right: -12%;
     width: 250%;
-    height: 100%;
-    
+    height: 100%;  
 }
 #wrapper-three{
-    padding: 20px;
+    padding: 30px;
 }
 #wrapper-three h1{
-    font-size: 1.7em;
+    font-size: 1.8em;
 }
 #wrapper-three p{
     color: #5A5444;
-    font-size: .8em;
+    font-size: .9em;
     line-height: 1.4em;
     margin: 10px 0;
 }
 #wrapper-three a{
     color: #5A5444;
-    font-size: .85em;
     font-weight: bold;
+    text-decoration: underline;
 }
 #wrapper-three a::after{
     font-family: 'Font Awesome 5 Free';
     content: '\f30b';
     margin-left: 5px;
-    text-decoration: underline;
 }
 #wrapper-there a:hover::after{
     padding-left: 10px;
@@ -245,286 +240,67 @@ input{
 footer{
     background-color: black;
     color: #959695;
-    padding: 40px 20px 20px 20px;
+    padding: 40px 20px;
 }
-footer h4{
+footer h3{
     color: white;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 footer p{
-    font-size: .85em;
     margin-bottom: 20px;
+    line-height: 1.4em;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
 }
 footer ul{
     margin-bottom: 20px;
 }
-footer ul li{
-    margin: 5px 0;
+.footer-links ul li{
+    margin-bottom: 15px;
 }
 footer ul li a{
     color: #959695;
 }
 footer ul li a:hover{
-    font-size: 1.2em;
-    transition: font-size 0.2s ease-in-out;
-}
-footer .footer-links{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: space-between;
+    border-bottom: 2px solid #959695;
 }
 
-@media (min-width: 320px) {
+/* For Tablet Screen Size */
+@media (min-width: 768px){
     #ad{
-        font-size: 0.9em;
+        padding: 20px 80px;
+
     }
-    nav{
-        padding: 25px 0;
+    #hero-image-container{
+        height: 350px;
+    }
+    #hero-image-container img{
+        height: 140%;
     }
     .logo{
-        font-size: 1.1em;
-    }
-    nav img{
-        width: 23px;
-    }
-    #hero-image-container{
-        height: 320px;
-    }
-    .hero-image-box{
-        top: 25px;
-        left: 25px;
-        width: 110px;
-        height: 90px;
-        padding: 15px;
-        font-weight: bold;
-        font-size: 0.8em;
-    }
-    .hero-image-box .price{
-        padding: 10px 5px;
-        font-weight: bold;
-    }
-    .hero-image-box button{
-        height: 35px;
-    }
-    .wrapper-content p{
-        font-size: .85em;
-        margin: 10px 0;
-    }
-    .wrapper-content ul {
-        padding-left: 2px;
+        padding-top: 10px;
         font-size: 1.2em;
-    }
-    #social-media ul li img{
-        width: 85px;
-    }
-    .escrow-image{
-        height: 250px;
-    }
-}
-@media (min-width: 360px) {
-    nav{
-        padding: 30px 0;
-    }
-    #hero-image-container{
-        height: 360px;
-    }
-    .hero-image-box{
-        width: 110px;
-        height: 105px;
-    }
-    .hero-image-box .price{
-        padding: 15px 5px;
-        font-weight: bold;
-    }
-    .hero-image-box button{
-        height: 40px;
-    }
-    .wrapper-content h1{
-        font-size: 1.6em;
-    }
-    .wrapper-content p{
-        font-size: 0.9em;
-        margin: 10px 0;
-    }
-    .wrapper-content ul{
-        font-size: 1.2em;
-        margin-left: 2px;
-    }
-    #social-media ul li img{
-        width: 100px;
-    }
-    #wrapper-two h1{
-        font-size: 1.9em;
-        padding: 5px 40px 5px 10px;
-    }
-    #wrapper-two p{
-        padding: 10px;
-        color: #5A5444;
-        line-height: 1.4em;
-        font-size: .9em;
-    }
-    #wrapper-two a{
-        padding-left: 10px;
-        color: #5A5444;
-        font-weight: bold;
-        font-size: .9em;
-    }
-    .escrow-image{
-        width: 280px;
-        height: 300px;
-    }
-    #wrapper-three p{
-        font-size: 1em;
-    }
-    #wrapper-three a{
-        font-size: 1em;
-    }
-    footer h4{
-        color: white;
-        padding-bottom: 5px;
-        font-size: 1.2em;
-    }
-    footer p{
-        font-size: 1em;
-        margin-bottom: 20px;
-    }
-    .footer-links{
-        padding-right: 10px;
-    }
-}
-@media (min-width: 411px) {
-    #wrapper-one{
-        padding: 0 20px;
-    }
-    #hero-image-container{
-        height: 411px;
-    }
-    .hero-image-box{
-        width: 150px;
-        height: 120px;
-    }
-    .hero-image-box .month-earning{
-        margin: 0 5px;
-        padding: 10px 0;
-    }
-    .hero-image-box .price{
-        padding: 10px 5px;
-    }
-    .hero-image-box button{
-        height: 40px;
-        margin-top: 5px;
-    }
-    .wrapper-content h1{
-        font-size: 1.9em;
-    }
-    .wrapper-content p{
-        font-size: 1em;
-    }
-    .wrapper-content ul{
-        font-size: 1.3em;
-        padding-left: 2px;
-    }
-    #email{
-        margin-left: 10px;
-        margin-right: 5px;
-        padding: 5px 15px;
-    }
-    #social-media ul li img{
-        width: 115px;
-    }
-    .escrow-image img{
-        right: -16%;
-    }
-    #wrapper-three h1{
-        padding-right: 40px;
-    }
-    #wrapper-three p{
-        margin-bottom: 20px;
-    }
-    .footer-links{
-        padding: 0 10px;
-    }
-}
-/* For low resolution tablets and mobile landscapes */
-@media (min-width: 480px) and (max-width: 549px) {
-    #ad{
-        font-size: .7em;
-        text-align: center;
-    }
-    #wrapper-one{
-        padding: 0 25px;
-        /* max-width: 700px ; */
-    }
-    #hero-image-container{
-        max-height: 500px;
-    }
-    .wrapper-content h1{
-        font-size: 1.9em;
-        padding-right: 120px;
-    }
-    #social-media{
-        padding-left: 10px;
-    }
-    #social-media ul li img{
-        width: 130px;
-    }
-    #wrapper-two{
-        padding: 30px;
-        margin: 0 30px 20px 30px;        
-    }
-    .escrow-image{
-        margin-left: 30px;
-    }
-    .escrow-image img{
-        right: -18%;
-    }
-    #wrapper-three{
-        padding: 10px 30px;
-    }
-    #wrapper-three h1{
-        padding-right: 209px;
-    }
-    footer{
-        padding: 30px;
-    }
-    .footer-links {
-        padding-left: 20px;
-        padding-right: 40px;
-    }
-
-}
-
-/*For Tablets*/
-@media (min-width: 550px){
-    #ad{
-        font-size: .8em;
-        text-align: center;
-        line-height: 20px;
     }
     .small-devices{
         display: none;
     }
-    .big-devices{
+    .tablet-devices{
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-between;
     }
-    #wrapper-one{
-        padding: 0 30px;
-        /* max-width: 700px ; */
-    }
-    .logo{
-        padding-top: 5px;
+    .tablet-devices a{
+        color: black;
+        padding-top: 10px;
+        margin-right: 20px;
     }
     nav ul{
         display: flex;
-        font-size: 0.7em;
-        padding-left: 110px;
-        font-weight: bold;
+        margin-right: 10px;
     }
     nav ul li{
-        padding: 10px 5px 0 5px;
+        padding-top: 10px;
     }
     nav ul li a{
         color: black;
@@ -537,89 +313,144 @@ footer .footer-links{
         color: white;
         background-color: black;
         border: none;
-        padding: 0 10px;
+        padding: 0 15px;
         border-radius: 5px;
         height: 40px;
-    }
-    #hero-image-container{
-        height: 430px;
+        cursor: pointer;
     }
     .wrapper-content h1{
-        padding-right: 180px;
+        font-size: 3em;
+        padding-right: 200px;
     }
-    #email{
-        margin-left: 5px;
+    .wrapper-content p{
+        font-size: 1.2em;
+        line-height: 1.4em;
     }
-    #social-media{
-        margin-left: 10px;
-    }
-    #social-media ul li img{
-        width: 90px;
-        padding-right: 10px;
+    .wrapper-content ul li{
+        font-size: 1.2em;
     }
     #wrapper-two{
-        padding: 50px 50px 0 50px;
-        margin: 0 30px 20px 30px;        
+        padding: 70px 70px 0;
+    }
+    #wrapper-two h1{
+        font-size: 3em;
+        padding-right: 100px;
+    }
+    #wrapper-two p{
+        font-size: 1.2em;
+    }
+    #wrapper-two a{
+        font-size: 1.2em;
     }
     .escrow-image{
-        width: 300px;
-        margin-left: 30px;
+        width: 500px;
+        height: 400px;
+        margin: 0 auto;
     }
     .escrow-image img{
-        right: -15%;
-    }
-    #wrapper-three{
-        padding: 20px 30px;
+        top: 20px;
+        right: -50px;  
     }
     #wrapper-three h1{
-        padding-right: 230px;
+        font-size: 2em;
     }
-    footer{
-        padding: 30px;
+    #wrapper-three p{
+        font-size: 1.2em;
     }
-    footer h4{
-        margin: 10px 0;
+    #wrapper-three a{
+        font-size: 1.2em;
     }
     .footer-links{
-        padding: 0;
-    }
-    footer .footer-links{
         display: flex;
-        flex-direction: row;
+        justify-content: space-around;
     }
 }
-@media (min-width: 600px) {
-    nav ul li{
-        font-size: 1.1em;
+
+/* For Laptop Screen Size */
+@media (min-width: 1440px) {
+    #wrapper-one{
+        padding: 0 150px;
     }
-    nav ul{
-        padding-left: 160px;
+    nav{
+        padding: 40px 0;
     }
-    #hero-image-container{
-        height: 475px;
-    }
-    #social-media ul li img{
-        width: 100px;
-    }
-    .escrow-image{
-        width: 320px;
-        height: 320px;
-    }
-}
-@media (min-width: 650px) {
-    #ad{
-        font-size: .9em;
+    #wrapper-content{
+        display: flex;
+        flex-direction: row-reverse;
     }
     #hero-image-container{
-        height: 515px;
+        max-width: 35%;
+        height: 35%
+    }
+    .wrapper-content{
+        padding: 80px 120px 80px 0;
+        padding-right: 50px;
     }
     .wrapper-content h1{
-        font-size: 2.05em;
+        line-height: 1.2em;
     }
-    #social-media ul li img{
-        width: 110px;
+    .wrapper-content p{
+        line-height: 1.4em;
+        padding-bottom: 10px;
+    }
+    .wrapper-content ul{
+        margin-bottom: 30px;
+    }
+    .wrapper-content ul li{
+        padding-bottom: 5px;
+    }
+    .laptop-devices{
+        display: flex;
+    }
+    #social-media ul{
+        margin: 30px 150px;
+    }
+    #wrapper-two{
+        margin: 0 150px;
+        padding-top: 0px;
+        display: flex;
+    }
+    .wrapper-two{
+        padding: 100px 100px 50px 0;
+    }
+    #wrapper-two h1{
+        font-size: 2em;
+    }
+    #wrapper-two::after{
+        content: '';
+        display: table;
+        clear: both;
     }
     .escrow-image{
-        width: 350px;
+        float: right;
+    }
+    .escrow-image{
+        width: 1000px;
+        height: 400px;
+        /* border: 1px solid black; */
+        margin-top: 0px;
+        position: relative;
+    }
+    .escrow-image img{
+        top: 0;
+    }
+    #wrapper-three {
+        padding: 30px 150px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #wrapper-three img{
+        width: 600px;
+        height: 500px;
+    }
+    .wrapper-three-content{
+        padding: 150px 10px 0;
+    }
+    #wrapper-three p{
+        padding: 10px 0;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 700px);
     }
 }

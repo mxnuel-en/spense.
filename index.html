@@ -8,61 +8,60 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0d29863e48.js" crossorigin="anonymous"></script>
     <title>spense.</title>
 </head>
 <body>
     <div id="ad">
         <p>
-            To celebrate Spense's launch, we will be waiving all fees for the entire month of April. <br>
-        </p>   
-
-        <a href="#">You will be recieving 100% of the earnings.</a>
+            To celebrate Spense's launch, we will be waiving all fees for the entire month of April.
+            <a href="#">You will be recieving 100% of the earnings.</a>
+        </p> 
     </div>
 
     <div id="wrapper-one">
-        <nav class="small-devices">
+        <nav>
             <a href="#" class="logo">spense.</a>
-            <img src="Assets/Hamburger Menu.svg" alt="Hamburger Menu">
-        </nav>
-        <nav class="big-devices">
-            <a href="#" class="logo">spense.</a>
-            <ul>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-            <button>Get Started</button>
-        </nav>
-
-        <div id="hero-image-container">
-            <img src="Assets/Hero Image without Box.png" alt="" class="hero-image">
-
-            <div class="hero-image-box">
-                <p class="month-earning">April Earnings</p>
-                <p class="price">$272.21</p>
-                <button>Withdraw</button>
+            <img src="Assets/Hamburger Menu.svg" alt="Hamburger Menu" class="small-devices">
+            <div class="tablet-devices">
+                <ul>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+                <a href="#">Login</a>
+                <button>Get Started</button>
             </div>
-        </div>
+        </nav>
+        <div id="wrapper-content">
+            <div id="hero-image-container">
+                <img src="Assets/Hero Image without Box.png" alt="Cafe worker">
 
-        <div class="wrapper-content">
-            <h1>Share your unfiltered thoughts. Get paid.</h1>
+                <div class="hero-image-box">
+                    <p class="month-earning">April Earnings</p>
+                    <p class="price">$272.21</p>
+                    <button>Withdraw</button>
+                </div>
+            </div>
 
-            <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love and get paid for doing <span>just</span> that.</p>
+            <div class="wrapper-content">
+                <h1>Share your unfiltered thoughts. Get paid.</h1>
 
-            <ul>
-                <li>Recieve 99% of the earnings.</li>
-                <li>Get paid via Debit Card, ACH or PayPal.</li>
-                <li>Withdraw your earnings anytime.</li>
-            </ul>
+                <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love and get paid for doing <span>just</span> that.</p>
 
-            <form action="#">
-                <input type="email" name="email" id="email" placeholder="john@example.com">
-                
-                <input type="submit" value="Get Started" id="submit-btn">
-            </form>
+                <ul>
+                    <li>Recieve 99% of the earnings.</li>
+                    <li>Get paid via Debit Card, ACH or PayPal.</li>
+                    <li>Withdraw your earnings anytime.</li>
+                </ul>
+
+                <form action="#">
+                    <input type="email" name="email" id="email" placeholder="john@example.com">
+                    
+                    <input type="submit" value="Get Started" id="submit-btn">
+                </form>
+            </div>
         </div>
     </div>
 
@@ -71,17 +70,22 @@
             <li><img src="Assets/Facebook Logo.png" alt="facebook logo"></li>
             <li><img src="Assets/Dribbble Logo.png" alt="dribble logo"></li>
             <li><img src="Assets/Youtube Logo.png" alt="youtube logo"></li>
-            <li class="big-devices"><img src="Assets/Pinterest Logo.png" alt="pinterest logo"></li>
-            <li class="big-devices"><img src="Assets/Twitter Logo.png" alt="twitter logo"></li>
+            <li class="tablet-devices"><img src="Assets/Pinterest Logo.png" alt="pinterest logo"></li>
+            <li class="tablet-devices"><img src="Assets/Twitter Logo.png" alt="twitter logo"></li>
+            <li class="laptop-devices"><img src="Assets/Reddit Logo.png" alt="reddit logo"></li>
+            <li class="laptop-devices"><img src="Assets/Google Logo.png" alt="google logo"></li>
+            <li class="laptop-devices"><img src="Assets/Slack Logo.png" alt="slack logo"></li>
         </ul>
     </div>
 
     <div id="wrapper-two">
-        <h1>Secure your money with Escrow.</h1>
+        <div class="wrapper-two">
+            <h1>Secure your money with Escrow.</h1>
 
-        <p>Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</p>
+            <p>Spense uses Escrow to secure all payments. We believe Escrow offers the highest level of security for your payments, so you never need to worry about scams.</p>
 
-        <a href="#">Learn more about Escrow</a>
+            <a href="#">Learn more about Escrow</a>
+        </div>
 
         <div class="escrow-image">
             <img src="Assets/Phone Mockup.png" alt="Phone Mockup">
@@ -89,22 +93,27 @@
     </div>
 
     <div id="wrapper-three">
-        <h1>A text editor like no other.</h1>
+        <div class="wrapper-three-content">
+            <h1>A text editor like no other.</h1>
 
-        <p>Our text editor pulls you into focus mode with it's simplistic design and usuability so you can put out your best writings.</p>
+            <p>Our text editor pulls you into focus mode with it's simplistic design and usuability so you can put out your best writings.</p>
 
-        <a href="#">Text Editor Live Demo</a>
+            <a href="#">Text Editor Live Demo</a>
+        </div>
 
         <img src="Assets/Text Editor.png" alt="Text Editor">
+        
     </div>
 
     <footer>
-        <h4>spense.</h4>
-        <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love and get paid for doing <span>just</span> that.</p>
+        <div class="footer-intro">
+            <h3>spense.</h3>
+            <p>Spense is an open platform for individuals to share their unfiltered thoughts. Discuss the topics you love and get paid for doing <span>just</span> that.</p>
+        </div>
 
         <ul class="footer-links">
             <li>
-                <h4>Company</h4>
+                <h3>Company</h3>
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Customers</a></li>
@@ -112,19 +121,19 @@
                 </ul>
             </li>
             <li>
-                <h4>Opportunities</h4>
+                <h3>Opportunities</h3>
                 <ul>
                     <li><a href="#">Jobs</a></li>
                 </ul>
             </li>
             <li>
-                <h4>Sitemap</h4>
+                <h3>Sitemap</h3>
                 <ul>
                     <li><a href="#">Homepage</a></li>
                 </ul>
             </li>
             <li>
-                <h4>Resources</h4>
+                <h3>Resources</h3>
                 <ul>
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Contact</a></li>
@@ -132,6 +141,6 @@
                 </ul>
             </li>
         </ul>
-    </footer>
+    </footer> -->
 </body>
 </html>

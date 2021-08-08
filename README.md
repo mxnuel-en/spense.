@@ -27,3 +27,12 @@ If you want more real-time communication, you can visit our community on [Slack]
 ### Fonts Used
 
 https://fonts.google.com/specimen/Cabin
+
+
+### Screen Sizes
+
+The project attached to this file is purely for portfolio purposes has no connection to the real world. Thus, isn't exactly responsive for all devices.
+The device sizes for this project includes:
+- Mobile device = 375px
+- Tablet device = 768px
+- Computer device = 1440px
